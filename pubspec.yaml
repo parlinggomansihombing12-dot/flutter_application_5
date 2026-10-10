@@ -1,0 +1,34 @@
+name: flutter_application_5
+description: "A new Flutter project."
+# Mencegah package ter-publish tidak sengaja ke pub.dev.
+publish_to: 'none'
+
+# Versi aplikasi: major.minor.patch+buildNumber
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ikon gaya iOS (CupertinoIcons)
+  cupertino_icons: ^1.0.8
+
+  # Untuk menampilkan file SVG (dipakai di BottomNavbarWidget)
+  flutter_svg: ^2.0.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Aturan lint yang direkomendasikan
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Folder aset SVG untuk bottom navbar
+  assets:
+    - assets/icons/
